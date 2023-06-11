@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cetak Struk</title>
+  <link rel="stylesheet" href="styl.css">
+  <script src="srcipt.js"></script>
+</head>
+<body>
+  <!-- Konten halaman web -->
+  <h1>Cetak Struk</h1>
+  <p>Masukan Harga</p>
+
+  <!-- Tombol cetak -->
+  <input type="text" id="nama" readonly>
+  <div id="numpad">
+    <button onclick="addToInput('1')">1</button>
+    <button onclick="addToInput('2')">2</button>
+    <button onclick="addToInput('3')">3</button>
+    <br>
+    <button onclick="addToInput('4')">4</button>
+    <button onclick="addToInput('5')">5</button>
+    <button onclick="addToInput('6')">6</button>
+    <br>
+    <button onclick="addToInput('7')">7</button>
+    <button onclick="addToInput('8')">8</button>
+    <button onclick="addToInput('9')">9</button>
+    <br>
+    <button onclick="clearInput()">C</button>
+    <button onclick="addToInput('0')">0</button>
+    <button onclick="backspaceInput()">&larr;</button>
+</div> 
+  <button onclick="handleClick()">Cetak Struk</button>
+
+  <!-- Frame cetak struk -->
+  <div class="print-frame" id="printFrame">
+    <div class="print-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kue Kering</td>
+            <td><div id="hasilNama"></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
